@@ -8,8 +8,8 @@ namespace LeetCodeCountPrimes
     {
         public int CountPrimes(int n)
         {
-            int totalPrimes = 0;
-
+            //    int totalPrimes = 0;
+            return 0;
         }
     }
 }
