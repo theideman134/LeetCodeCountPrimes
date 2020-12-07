@@ -50,35 +50,35 @@ namespace LeetCodeCountPrimesTests
             Assert.AreEqual(1229, numPrime);
         }
 
-        //1 to 1,000,000 =9,592
+        //1 to 100,000 =9,592
         [Test]
         public void Test100000()
         {
             var prime = new Solution();
-            int numPrime = prime.CountPrimes(1000000);
+            int numPrime = prime.CountPrimes(100000);
 
             Assert.AreEqual(9592, numPrime);
         }
 
-       // 1 to 10,000,000 = 78,492
+        // 1 to 1,000,000 = 78,492
+        [Test]
+        public void Test1000000()
+        {
+            var prime = new Solution();
+            int numPrime = prime.CountPrimes(1000000);
+
+            Assert.AreEqual(78498, numPrime);
+        }
+
+
+        // 1 to 10,000,000 = 6,64,579
         [Test]
         public void Test10000000()
         {
             var prime = new Solution();
             int numPrime = prime.CountPrimes(10000000);
 
-            Assert.AreEqual(78492, numPrime);
-        }
-
-
-        // 1 to 1,000,000,000 = 6,64,579
-        [Test]
-        public void Test1000000000()
-        {
-            var prime = new Solution();
-            int numPrime = prime.CountPrimes(100000);
-
-            Assert.AreEqual(6640579, numPrime);
+            Assert.AreEqual(664579, numPrime);
         }
 
 
